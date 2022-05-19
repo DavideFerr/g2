@@ -4,28 +4,38 @@
 #include <time.h>
 using namespace std;
 
-void stampa_bit(int ndibit, int bit[]){
+void stampa_bit(int &ndibit, int bit[]){
 	cout<<"\nquesta e' la sequenza di bit generati: ";
 	for(int i=0; i<ndibit; i++){
 		cout<<bit[i];
 	}
 }
 
-void riscrittura(int bit[],int ndibit)
+void riscrittura(int bit[],int &ndibit)
 	{	
 		int i=0;
-		int j;
-		while(i<ndibit)
+		
+        if(bit[i]==! 1){
+        int j;
+        while(i<ndibit)
 		{
 		j=i+1;
 		bit[i]=bit[j];
-		i++;
-		}
+		i=i+1;
+		}                
+        }
+
 		ndibit=ndibit-1;
 		stampa_bit(ndibit, bit);
 	}
+    
 
-	riparte_da_uno(int bit[], int ndibit){
+
+    //PRIMA TRASFORMO I PRIMI 4 POI LI VERIFICO E SE TROVO L 1 RIPRENDO DA LI 
+
+
+
+/*	riparte_da_uno(int bit[], int ndibit){
 		int posizione;
 		riscrittura(bit, ndibit);
 		for(int i=0; i<ndibit; i++){
@@ -35,12 +45,11 @@ void riscrittura(int bit[],int ndibit)
 			}
 		}
 	}
-
+*/
+int ndibit;
 
 int main(){
-	
-	
-	int ndibit;
+
 	int a;
 	cout<<"scegli quanti bit generare (da 8 a 32) : ";
 	cin>>ndibit;
@@ -62,7 +71,7 @@ int main(){
 	}
 
 	stampa_bit(ndibit, bit);
-	
+	cout<<"\n\nil divisore e': 1101";
 	int m=4;
 	int gx[m];
 	gx[0]=1;
@@ -81,23 +90,22 @@ int main(){
 	
 	//aggiunta 000 al bit perche' il gx e' 1011
 	bit[ndibit];
+	bit[ndibit]=0;
 	bit[ndibit-1]=0;
 	bit[ndibit-2]=0;
-	bit[ndibit-3]=0;
-	
-	int posizione=0;
+//	int posizione=0;
 
 
+//	int traguardo=ndibit-2;
+    bool loop=true;
 
-
-	
-	int traguardo=ndibit-2;
-
-	for(int i=0, h=3; i<ndibit-1; i++, h--){
+	for(int i=0, h=3; m=true; i++, h--){
 		
 		if(ndibit<=4){
-
+            cout<<"-----------RISULTATO FINALE--------";
+            riscrittura(bit, ndibit);
 			return 0;
+            
 		}
 /*		if(posizione!=0){
 			i=posizione;
@@ -105,9 +113,10 @@ int main(){
 		}
 */
 		if(h==-1){
-			i=riparte_da_uno(bit, ndibit);
+			//i=riparte_da_uno(bit, ndibit);
 			h=3;
 		}
+     
 		cout<<"\n\nrisultato tra :"<<bit[i]<<" e ";
 		cout<<gx[h]<<" = ";
 		if (bit[i] == gx[h]){
@@ -119,11 +128,11 @@ int main(){
 			posizione=i;
 		}
 */		cout<<bit[i];
-
-		riscrittura(bit, ndibit);
+        riscrittura(bit, ndibit);
 	}
 	
-	
+
+
 	
 	
 }
