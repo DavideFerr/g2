@@ -168,7 +168,7 @@ int main(){
 */
 		if(h==-1){
 			//i=riparte_da_uno(bit, ndibit);
-			h=3;
+			h=m;
 		}
      
 		cout<<"\n\nrisultato tra :"<<bit[i]<<" e ";
