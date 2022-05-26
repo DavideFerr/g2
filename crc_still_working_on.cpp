@@ -88,6 +88,7 @@ int main(){
 	}
 	
 	int bit[ndibit];
+	
 	srand (time(NULL));
 	
 	cout<<"numero di bit: "<<ndibit<<endl;
@@ -153,7 +154,7 @@ int main(){
 	//	int traguardo=ndibit-2;
     bool loop=true;
 
-	for(int i=0, h=3; m=true; i++, h--){
+	for(int i=0, h=m; loop=true; i++, h--){
 		
 		if(ndibit<=3){
             cout<<"\n\n-----------RISULTATO FINALE--------";
