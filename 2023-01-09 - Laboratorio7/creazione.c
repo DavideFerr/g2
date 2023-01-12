@@ -1,13 +1,16 @@
-#include <pthread.h>
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>  //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <unistd.h> //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <time.h>  //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <sys/wait.h> //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <pthread.h>
 
-void cd_thread(void arg){  //cod esecuzione thread
+void *cd_thread(void * arg){  //cod esecuzione thread
     pid_t pid; 
     pid = getpid(); //richiama l'identificatore del pid
     pthread_t tid;
     tid = pthread_self(); //richiama l'identificatore del tid
-    printf("Sono il thread %1 del processo %1\n", (int)tid, pid);
+    printf("Sono il thread %i del processo %i\n", (int)tid, pid);
 }
 
 int main (){
