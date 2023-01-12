@@ -1,5 +1,8 @@
+#include <sys/wait.h> //implementato di mia spontanea volonta per aggiustare gli errori nell'esecuzione
 #include <stdio.h>
+#include <unistd.h> //implementato di mia spontanea volonta per aggiustare gli errori nell'esecuzione
 #include <stdlib.h>
+#include <time.h> //implementato di mia spontanea volonta per aggiustare gli errori nell'esecuzione
 int main(){
 int pid,pid1,pid2,status,x;
 srand(time(NULL));
