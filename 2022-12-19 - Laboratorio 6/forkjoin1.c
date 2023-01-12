@@ -1,7 +1,8 @@
-
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <unistd.h>    //implementato di mia volontà per correggere gli errori dell'esecuzione
+#include <sys/wait.h>  //implementato di mia volontà per correggere gli errori dell'esecuzione
+ 
 int calcoli_figlio1(){
 int k;
 printf("1.1 elab. parallela processo figlio \n");
