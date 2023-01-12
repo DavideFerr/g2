@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>  //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
-#include <unistd.h> //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
-#include <time.h>  //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
-#include <sys/wait.h> //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <stdlib.h>  //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori.
+#include <unistd.h> //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori.
+#include <time.h>  //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori.
+#include <sys/wait.h> //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori.
 #include <pthread.h>
 
 void *cd_thread(void * arg){  //cod esecuzione thread
