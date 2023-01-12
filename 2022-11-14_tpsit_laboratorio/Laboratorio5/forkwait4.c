@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h> //ho implementato questo plugin documentando il mio errore online, ora non ci sono più errori nell'esecuzione.
-#include <time.h>  //ho implementato questo plugin documentando il mio errore online, ora non ci sono più errori nell'esecuzione.
-#include <sys/wait.h> //ho implementato questo plugin documentando il mio errore online, ora non ci sono più errori nell'esecuzione.
+#include <unistd.h> //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori nell'esecuzione.
+#include <time.h>  //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori nell'esecuzione.
+#include <sys/wait.h> //ho implementato questa libreria documentando il mio errore online, ora non ci sono più errori nell'esecuzione.
 int main(){
 	int pid, pid1, pid2, status, x;
 	srand(time(NULL));
