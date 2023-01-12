@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <unistd.h>  //aggiunto di mia volontà per risolvere degli errori nell'esecuzione
 #define NRFIGLI  4
 #define VOLTE  10
 int main(){
@@ -11,7 +12,7 @@ int main(){
 		pid = fork();
 		if(pid == 0) {
 			c = 'a' + x;
-			for(y = 0; y < VOLTE;  y++){
+			for(y = 0; x < VOLTE;  y++){
 				printf (" %c", c); fflush(0);
 				sleep (1);
 			}
@@ -21,9 +22,7 @@ int main(){
 		else 
 		pid = wait(&status);
 		if(wifexited(STATUS))
-		priintf(" Term. volontaria di %d con stato %d\n", pid, WEXITSTATUS(status)); Sono il figlio, il mio pid e':  %d. ", getpid());
-		printf(" il mio papi ha il pid: %d\n", getppid());
-		exit(69);
+		printf(" Term. volontaria di %d con stato %d\n", pid, WEXITSTATUS(status));
 		else 
 		if(WIFSIGNALED(status))
 		
