@@ -1,6 +1,9 @@
-#include <pthread.h>
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>  //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <unistd.h> //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <time.h>  //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <sys/wait.h> //ho implementato questa libreria documentando il mio errore online, ma rimangono ancora degli errori.
+#include <pthread.h>
 
 void* thread1(void* arg){
     sleep(rand() % 1);
