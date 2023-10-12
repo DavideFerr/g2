@@ -1,0 +1,29 @@
+﻿
+1)
+
+switch ($color) {
+case "red":
+echo "Hello";
+break;
+case "green":
+echo "Welcome";
+break;
+}
+
+//output: Hello oppure Welcome
+
+2)
+
+﻿
+
+switch ($color) { case "red":
+echo "Hello";
+break;
+case "green":
+echo "Welcome";
+break;
+default:
+echo "Neither";
+}
+
+//output: Hello oppure Welcome oppure Neither
