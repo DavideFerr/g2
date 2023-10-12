@@ -1,0 +1,11 @@
+1)
+echo strlen ("Hello World!");   //OUTPUT: Hello World
+
+2)
+
+echo strrev ("Hello World!");   //OUTPUT: Hello World
+
+3)
+$oldtxt = "Hello World!"; 
+$newtxt = str_replace ( "World" , "Dolly" , $oldtxt );  //NOOUTPUT
+
