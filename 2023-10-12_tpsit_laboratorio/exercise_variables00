@@ -1,0 +1,12 @@
+1)
+
+$txt= "Hello";
+//NO OUTPUT
+
+2)
+
+$x = 5;
+$y = 7;
+echo$x + $y;
+
+//OUTPUT: SOMMA DI x e y
