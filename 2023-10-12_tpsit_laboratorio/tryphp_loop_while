@@ -1,0 +1,62 @@
+example1)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php  
+$x = 1;
+ 
+while($x <= 5) {
+  echo "The number is: $x <br>";
+  $x++;
+} 
+?>  
+
+</body>
+</html>
+
+/*output
+
+The number is: 1
+The number is: 2
+The number is: 3
+The number is: 4
+The number is: 5
+
+/*
+------------------------------------------------------------------------------------------------------------------------------------
+example2)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php  
+$x = 0;
+ 
+while($x <= 100) {
+  echo "The number is: $x <br>";
+  $x+=10;
+}
+?>  
+
+</body>
+</html>
+
+
+/*output:
+
+The number is: 0
+The number is: 10
+The number is: 20
+The number is: 30
+The number is: 40
+The number is: 50
+The number is: 60
+The number is: 70
+The number is: 80
+The number is: 90
+The number is: 100
+
+*/
