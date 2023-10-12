@@ -1,0 +1,71 @@
+example1)
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo strlen("Hello world!");
+?> 
+ 
+</body>
+</html>
+
+//OUTPUT : 12
+------------------------------------------------------------------------------------------------------------------------------------
+example2)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo str_word_count("Hello world!");
+?> 
+ 
+</body>
+</html>
+
+
+//output: 2
+------------------------------------------------------------------------------------------------------------------------------------
+example3)
+<?php
+echo strrev("Hello world!"); // outputs !dlrow olleH
+?>
+//output: !dlrow olleH
+------------------------------------------------------------------------------------------------------------------------------------
+example4)
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo strpos("Hello world!", "world");
+?> 
+ 
+</body>
+</html>
+
+
+
+//output: 6
+------------------------------------------------------------------------------------------------------------------------------------
+example5)
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo str_replace("world", "Dolly", "Hello world!");
+?> 
+ 
+</body>
+</html>
+
+
+
+output: Hello Dolly!
