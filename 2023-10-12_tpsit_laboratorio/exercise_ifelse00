@@ -1,0 +1,44 @@
+1)
+
+$a = 50;
+$0 = 10;
+if ($a > $b) {
+echo "Hello World" ;
+}
+//output Hello World
+
+
+2)
+
+$a = 50;
+$b = 10;
+if ($a != $b) {
+echo "Hello World";
+} 
+
+//output Hello World
+
+3)
+$a = 50;
+$b = 10;
+if ($a == $b) {
+echo "Yes";
+} else {
+echo "No";
+}
+
+//output: può printare yes oppure No
+
+4)
+
+$a = 50;
+$b = 10;
+if ($a == $b) {
+echo "1";
+} elseif ($a > $b) {
+echo "2";
+} else {
+echo "3";
+}
+
+//output: può printare 1, 2 o 3
